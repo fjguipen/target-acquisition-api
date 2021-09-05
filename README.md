@@ -20,7 +20,10 @@ Run tests with jest
 Run tests from sh script using provided test_cases.txt (Requires curl and OSX/Linnux OS)
 
 ### `npm run dev`
-Run server on watch mode
+Run server on development with watch mode
+
+### `npm run dev:docker`
+Runs server on development using docker
 
 ### `npm run build`
 Compiles TS code into JS
