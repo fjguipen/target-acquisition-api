@@ -51,7 +51,7 @@ export class TargetAcquisition {
         return protocol.applyRule(acc);
       },
       this.data.scan.filter((scan) => {
-        return scan.distance < MAXIMUM_DISTANCE;
+        return scan.distance <= MAXIMUM_DISTANCE;
       })
     );
 
