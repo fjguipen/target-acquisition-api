@@ -1,0 +1,32 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "amd": true,
+    "node": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "import"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/recommended",
+    "plugin:import/typescript",
+    "plugin:prettier/recommended"
+  ],
+  "ignorePatterns": ["dist", "src/**/*.spec.ts"],
+  "rules": {
+    "quotes": ["warn", "single"],
+    "spaced-comment": ["error", "always", {
+        "block": {
+            "balanced": true
+        }
+    }],
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/camelcase": "off",
+    "@typescript-eslint/no-use-before-define": "off",
+    "@typescript-eslint/interface-name-prefix": "off",
+    "import/no-extraneous-dependencies": "error",
+    "@typescript-eslint/no-var-requires": "off"
+  }
+}

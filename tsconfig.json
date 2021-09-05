@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "declaration": true,
+    "declarationDir": "./dist",
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "lib": [
+      "es2017"
+    ],
+    "pretty": true,
+    "types": [
+      "node",
+      "jest"
+    ],
+    "sourceMap": true,
+    "target": "es2017",
+    "baseUrl": "./",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/**/*.spec.ts"
+  ]
+}

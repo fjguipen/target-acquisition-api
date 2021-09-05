@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  api:
+    image: node:14-alpine
+    working_dir: /app
+    command: npm run dev
+    restart: 'no'
+    ports: 
+      - 8888:8888
+    volumes:
+      - ./:/app
+
